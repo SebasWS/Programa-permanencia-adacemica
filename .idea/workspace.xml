@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="12480308-97ef-44d3-86b9-b7bbc06569c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aplicacion/templates/single-post.html" afterPath="$PROJECT_DIR$/Aplicacion/templates/single-post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aplicacion/urls.py" afterPath="$PROJECT_DIR$/Aplicacion/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aplicacion/views.py" afterPath="$PROJECT_DIR$/Aplicacion/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,21 +28,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="single-post.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="single-post.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Aplicacion/templates/single-post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="137" column="41" lean-forward="true" selection-start-line="137" selection-start-column="41" selection-end-line="137" selection-end-column="41" />
+            <state relative-caret-position="331">
+              <caret line="136" column="63" lean-forward="false" selection-start-line="136" selection-start-column="63" selection-end-line="136" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Aplicacion/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -78,9 +77,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Aplicacion/views.py" />
         <option value="$PROJECT_DIR$/Aplicacion/urls.py" />
         <option value="$PROJECT_DIR$/Aplicacion/templates/single-post.html" />
+        <option value="$PROJECT_DIR$/Aplicacion/views.py" />
       </list>
     </option>
   </component>
@@ -240,16 +239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Aplicacion/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Aplicacion/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -262,9 +251,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Aplicacion/templates/single-post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="137" column="41" lean-forward="true" selection-start-line="137" selection-start-column="41" selection-end-line="137" selection-end-column="41" />
+        <state relative-caret-position="331">
+          <caret line="136" column="63" lean-forward="false" selection-start-line="136" selection-start-column="63" selection-end-line="136" selection-end-column="63" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Aplicacion/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

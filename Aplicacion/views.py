@@ -19,5 +19,7 @@ def Ingreso_Evaluador(entrada):
     return HttpResponse(template.render(context,entrada))
 
 def Encuesta(entrada):
+    dato=entrada.POST
+    print(dato)
 
     return HttpResponse(9)
