@@ -125,7 +125,13 @@ http://www.tooplate.com/view/2082-pure-mix
 						        <span><i class="fa fa-date"></i> 4 June 2016, Saturday</span>
 					       </div>
 
-               <img src="{% static 'images/blog-img1.jpg' %}" class="img-responsive post-image" alt="Blog">
+               <form action="/Encuesta/", method="post">
+                     {% csrf_token %}
+                     <input type="text" name="texto" />
+                     <input type="submit" value="Enviar" /><br>
+
+                     <input type="radio" name="choice" value="1" />1<br>
+               </form>
 
 
 

@@ -18,4 +18,6 @@ def Ingreso_Evaluador(entrada):
     context={}
     return HttpResponse(template.render(context,entrada))
 
+def Encuesta(entrada):
 
+    return HttpResponse(9)
