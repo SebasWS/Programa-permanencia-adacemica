@@ -1,0 +1,7 @@
+Django==1.10.6
+argparse==1.2.1
+wsgiref==0.1.2
+gunicorn==19.6.0
+whitenoise==2.0.6
+psycopg2==2.6.1
+dj-database-url==0.4.1
