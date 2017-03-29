@@ -1,0 +1,427 @@
+﻿{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--
+
+Template 2082 Pure Mix
+
+http://www.tooplate.com/view/2082-pure-mix
+
+-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!-- Site title
+   ================================================== -->
+	<title>Resultados</title>
+
+	<!-- Bootstrap CSS
+   ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+		<!-- Animate CSS
+   ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+
+	<!-- Font Icons CSS
+   ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+
+	<!-- Main CSS
+   ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!-- Google web font 
+   ================================================== -->	
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <style>
+.news-demo {
+  background: #fff;
+  padding: 20px;
+}
+
+.news-demo h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.news-demo .p {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  margin-top: 70px;
+}
+
+.news-demo .p ~ p {
+  margin-top: 0;
+}
+
+.news-demo .p a {
+  text-decoration: underline;
+}
+
+.news-demo .p a:hover {
+  color: red;
+}
+</style>
+<link rel="stylesheet" href="{% static 'css/vertical.news.slider.css?v=1.0' %}">
+</head>
+<body>
+
+
+<!-- Preloader section
+================================================== -->
+<div class="preloader">
+
+	<div class="sk-spinner sk-spinner-pulse"></div>
+
+</div>
+
+
+<!-- Navigation section
+================================================== -->
+<div class="nav-container">
+   <nav class="nav-inner transparent">
+
+      <div class="navbar">
+         <div class="container">
+            <div class="row">
+
+              <div class="brand">
+                <a href="index.html">Resultados</a>
+              </div>
+
+              <div class="navicon">
+                <div class="menu-container">
+
+                  <div class="circle dark inline">
+                    <i class="icon ion-navicon"></i>
+                  </div>
+
+                  <div class="list-menu">
+                    <i class="icon ion-close-round close-iframe"></i>
+                    <div class="intro-inner">
+                     	<ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="single-post.html">Ingreso estudiante</a></li>
+                        <li><a href="single-project.html">Ingreso evaluador</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+         </div>
+      </div>
+
+   </nav>
+</div>
+
+
+<!-- Header section
+================================================== -->
+<section id="header" class="header-three">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+            	<div class="header-thumb">
+              		 <h1 class="wow fadeIn" data-wow-delay="0.6s">Resultados para estimar permanencia</h1>
+              		 <h3 class="wow fadeInUp" data-wow-delay="0.9s">Gráficas por categoría según lo respondido por el estudiante</h3>
+           		</div>
+			</div>
+
+		</div>
+	</div>		
+</section>
+
+
+<!-- About section
+================================================== -->
+<section id="about">
+   <div class="container">
+   <div class="news-demo">
+     <div class="news-holder cf">
+
+    <ul class="news-headlines">
+      <li class="selected">1) Probabilidad de desercion estudiantil
+      <li>2)Nivel de perseverancia de 0 a 5, siendo 0 poco perseverante y 5 muy perseverante.</li>
+      <li>3) Expectativas de éxito  académico de 0 a 5, siendo 0 pocas expectativas y 5 las mejores expectativas.</li>
+      <li>4) Habiliades para estudiar de 0 a 5, siendo 0 poco hábil y 5 muy hábil.</li>
+      <li>5) Situación actual del entorno y ambiente familiar de 0 a 5, siendo 0 mala y 5 muy buena.</li>
+      <li>6) Situación actual en la universidad de 0 a 5, siendo 0 negativa y 5 positiva.</li>
+      <li>7) Satisfacción con el sistema académico de 0 a 5, siendo 0 insatisfecho y 5 muy satisfecho.</li>
+      <li>8) Calidad de recreación y deporte de 0 a 5, siendo 0 de mala calidad y 5 de muy buena calidad.</li>
+      <li>9) Calidad de la enseñanza en la universidad de 0 a 5, siendo 0 de mala calidad y 5 de muy buena calidad.</li>
+      <li>10) Calidad de los docentes de 0 a 5, siendo 0 de mala calidad y 5 de muy buena calidad.</li>
+      <li>11) Disponibilidad recursos en la universidad de 0 a 5, siendo 0 poco disponibles y 5 muy disponibles.</li>
+      <li>12) Costo-beneficio de estudiar en la universidad de 0 a 5, siendo 0 mucho costo poco beneficio y 5 poco costo y mucho beneficio.</li>
+      <li>13) Situación económica de 0 a 5, siendo 0 mala y 5 excelente.</li>
+      <li>14) Nivel educativo de los padres de 0 a 5, siendo 0 bajo y 5 alto.</li>
+      <li>15) Adaptación a la universidad de 0 a 5, siendo 0 poco adaptado y 5 muy adaptado.</li>
+      <li>16) Desempeño académico de 0 a 5, siendo 0 malo y 5 excelente.</li>
+      <li>17) Compatibilidad de horario con actividades extra académicas de 0 a 5, siendo 0 poco compatible y 5 muy compatible.</li>
+      <li>18) Satisfacción con la carrera de 0 a 5, siendo 0 poco satisfecho y 5 muy satisfecho.</li>
+      <li>19) Nivel académico del colegio de 0 a 5, siendo 0 malo y 5 excelente.</li>
+      <li>20) Calidad del programa académico de 0 a 5, siendo 0 malo y 5 excelente.</li>
+      <li>21) Resultados en las pruebas Saber o el examen de ingreso a la universidad de 0 a 5, siendo 0 malos y 5 excelentes.</li>
+      <li>22) Calificación de servicios de financiamiento de 0 a 5, siendo 0 malos y 5 buenos.</li>
+      <li>23) Situación de orden público de 0 a 5, siendo 0 una mala situación y 5 una buena situación.</li>
+      <li>24) Calificación de la interacción entre docentes y estudiantes de 0 a 5, siendo 0 mala y 5 buena.</li>
+      <li>25) Calificación del apoyo académico ofrecido de 0 a 5, siendo 0 malo y 5 excelente.</li>
+      <li>26) Calificación del apoyo psicológico ofrecido de 0 a 5, siendo 0 malo y 5 excelente.</li>
+      <li>27) Calificación de situación laboral de 0 a 5, siendo 0 mala o inexistente y 5 buena.</li>
+      <li>28) Situación laboral e ingreso de padres de 0 a 5, siendo 0 una mala situación y 5 una buena situación.</li>
+      <li>29) Dependencia económica con los padres de 0 a 5, siendo 0 independiente y 5 totalmente dependiente.</li>
+      <!-- li.highlight gets inserted here -->
+    </ul>
+
+    <div class="news-preview">
+
+      <div class="news-content top-content">
+        <img src="{% static 'imagenes/probabilidad de desercion.png' %}">
+        <p><b><a href="#">Probabilidad de que el estudiante deserte.</a></b></p>
+
+        <p>Siendo 0% la menor probabilidad posible y 100% la mayor.</p>
+      </div><!-- .news-content -->
+
+      <div class="news-content">
+        <img src="{% static 'imagenes/f1.png' %}">
+        <p><a href="#">Nivel de perseverancia de 0 a 5, siendo 0 poco perseverante y 5 muy perseverante.</a></p>
+
+        <p>Un mayor grado de perseverancia aumenta la probabilidad de permanencia, se debe enseñar a los estudiantes a no desistir fácilmente. Si el nivel es muy bajo, consultar con psicología.</p>
+      </div><!-- .news-content -->
+
+
+      <div class="news-content">
+        <img src="{% static 'imagenes/f2.png' %}">
+        <p><a href="#">Expectativas de éxito académico de 0 a 5, siendo 0 pocas expectativas y 5 las mejores expectativas.</a></p>
+
+        <p>Esperamos que las expectativas de éxito sean altas porque ello conlleva un mayor esfuerzo por parte del estudiante.</p>
+      </div><!-- .news-content -->
+
+      <div class="news-content">
+        <img src="{% static 'imagenes/f3.png' %}">
+        <p><a href="#">Habiliades para estudiar de 0 a 5, siendo 0 poco hábil y 5 muy hábil</a></p>
+
+        <p>Los estudiantes que no se consideren hábiles para estudiar deben capacitarse en métodos de estudio.</p>
+      </div><!-- .news-content -->
+
+      <div class="news-content">
+        <img src="{% static 'imagenes/f4.png' %}">
+        <p><a href="#">Situación actual del entorno y ambiente familiar de 0 a 5, siendo 0 mala y 5 muy buena.</a></p>
+
+        <p>Un entorno familiar problemático reduce la concentración del estudiante. Se debe tratar con psicología si lo amerita.</p>
+      </div><!-- .news-content -->
+
+      <div class="news-content">
+        <img src="{% static 'imagenes/f5.png' %}">
+        <p><a href="#">Situación actual en la universidad de 0 a 5, siendo 0 negativa y 5 positiva.</a></p>
+
+        <p>Si el estudiante está incómodo con la universidad, es bueno conocer su punto de vista respecto al ambiente, profesores y compañeros.</p>
+      </div><!-- .news-content -->
+
+      <div class="news-content">
+        <img src="{% static 'imagenes/f6.png' %}">
+        <p><a href="#">Satisfacción con el sistema académico de 0 a 5, siendo 0 insatisfecho y 5 muy satisfecho.</a></p>
+
+        <p>Si el estudiante no está satisfecho con el sistema académico, debe compartir su punto de vista de cómo mejorarlo.</p>
+      </div><!-- .news-content -->
+      
+            <div class="news-content">
+        <img src="{% static 'imagenes/f7.png' %}">
+        <p><a href="#">Calidad de recreación y deporte de 0 a 5, siendo 0 de mala calidad y 5 de muy buena calidad.</a></p>
+
+        <p>Si el estudiante considera que los espacios de bienestar son insuficientes, es necesario buscar nuevos espacios para la comunidad académica.</p>
+      </div><!-- .news-content -->
+      
+      <div class="news-content">
+        <img src="{% static 'imagenes/f8.png' %}">
+        <p><a href="#">Calidad de la enseñanza en la universidad de 0 a 5, siendo 0 de mala calidad y 5 de muy buena calidad.</a></p>
+
+        <p>Si el esudiante considera que la calidad no  es apropiada, hay que revisar temas de los planes de estudio y analizar su pertinencia</p>
+      </div><!-- .news-content -->
+      
+            <div class="news-content">
+        <img src="{% static 'imagenes/f9.png' %}">
+        <p><a href="#">Calidad de los docentes de 0 a 5, siendo 0 de mala calidad y 5 de muy buena calidad.</a></p>
+
+        <p>Si bien en la evaluación docente estos resultados se ven reflejados, de estar inconforme el estudiante, los docentes deben tomar mediadas</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f10.png' %}">
+        <p><a href="#">Disponibilidad recursos en la universidad de 0 a 5, siendo 0 poco disponibles y 5 muy disponibles.</a></p>
+
+        <p>Si los recursos son difíciles o complicados de obtener, se debe realizar una mejor logística o inventario</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f11.png' %}">
+        <p><a href="#">Costo-beneficio de estudiar en la universidad de 0 a 5, siendo 0 mucho costo poco beneficio y 5 poco costo y mucho beneficio.</a></p>
+
+        <p>De no estar recibiéndose el suficiente beneficio, el estudiante deberá compartir sus razones por las cuales lo considera así</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f12.png' %}">
+        <p><a href="#">Situación económica de 0 a 5, siendo 0 mala y 5 excelente.</a></p>
+
+        <p>Si el estudiante está en una situación económica difícil, puede pedir apoyo financiero o psicológico respecto al manejo de sus recursos y su percepción de gastos y fuentes de ingreso</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f13.png' %}">
+        <p><a href="#">Nivel educativo de los padres de 0 a 5, siendo 0 bajo y 5 alto.</a></p>
+
+        <p>Si bien es más la actitud de los padres respecto a la realización de estudios universitarios por parte de sus hijos, los padres con poco o sin estudios son más propensos a ser menos motivadores</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f14.png' %}">
+        <p><a href="#">Adaptación a la universidad de 0 a 5, siendo 0 poco adaptado y 5 muy adaptado.</a></p>
+
+        <p>Si el estudiante no se siente acoplado a la universidad, es necesario invitarlo a participar en las diferentes actividades extracurriculares así como ofrecer un ambiente agradable en clase</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f15.png' %}">
+        <p><a href="#">Desempeño académico de 0 a 5, siendo 0 malo y 5 excelente.</a></p>
+
+        <p>Si el estudiante considera su desempeño malo (no necesariamente acorde a sus notas), se le deben ofrecer asesorías y consejería académica como apoyo</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f16.png' %}">
+        <p><a href="#">Compatibilidad de horario con actividades extra académicas de 0 a 5, siendo 0 poco compatible y 5 muy compatible.</a></p>
+
+        <p>Si el estudiante estudia en otra institución adicionalmente o trabaja, es necesario ofrecerle una gama amplia de horarios para que pueda acceder a todas sus actividades</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f17.png' %}">
+        <p><a href="#">Satisfacción con la carrera de 0 a 5, siendo 0 poco satisfecho y 5 muy satisfecho.</a></p>
+
+        <p>Si el estudiante no está satisfecho con su elección profesional, es bueno orientarlo con psicología a ver si es cuestión de vocación o si es alguna dificultad académica posible de resolver</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f18.png' %}">
+        <p><a href="#">Nivel académico del colegio de 0 a 5, siendo 0 malo y 5 excelente.</a></p>
+
+        <p>Si el colegio no ofreció buenas bases al estudiante, su proceso académico seá más difícil, por lo que se deben nivelar los temas deficientes y brindar apoyo académico.</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f19.png' %}">
+        <p><a href="#">Calidad del programa académico de 0 a 5, siendo 0 malo y 5 excelente.</a></p>
+
+        <p>Si el estudiante no está conforme con su plan de estudios o los módulos de temas en las materias, es útil que comparta su opinión y evaluar si el programa merece modificaciones</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f20.png' %}">
+        <p><a href="#">Resultados en las pruebas Saber o el examen de ingreso a la universidad de 0 a 5, siendo 0 malos y 5 excelentes.</a></p>
+
+        <p>Si el estudiante tuvo bajos resultados en los exámenes mencionados, es posible que tenga dificultades provenientes del colegio y debe tratarse con apoyo académico</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f21.png' %}">
+        <p><a href="#">Calificación de servicios de financiamiento de 0 a 5, siendo 0 malos y 5 buenos.</a></p>
+
+        <p>Si el estudiante requiere financiamiento y este se le dificulta, es conveniente para la universidad buscar convenios para apoyarlo a pagar sus estudios de la forma más responsable posible</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f22.png' %}">
+        <p><a href="#">Situación de orden público de 0 a 5, siendo 0 una mala situación y 5 una buena situación.</a></p>
+
+        <p>Si la situación de orden público de la universidad o los alrededores es compleja, se debe brindar seguridad, apoyo y oportunidades de reserva de cupo o clases virtuales para los estudiantes si la situación lo amerita</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f23.png' %}">
+        <p><a href="#">Calificación de la interacción entre docentes y estudiantes de 0 a 5, siendo 0 mala y 5 buena.</a></p>
+
+        <p>Si los estudiantes consideran mala la interacción con los docentes, es bueno revisar el trato de los mismos y la forma en la que las clases abordan al mismo tiempo buen trato y exigencia académica</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f24.png' %}">
+        <p><a href="#">Calificación del apoyo académico ofrecido de 0 a 5, siendo 0 malo y 5 excelente.</a></p>
+
+        <p>Si el estudiante considera insuficiente el apoyo académico hay que garantizar horarios, facilidades y personal idóneo para realizar dicho apoyo</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f25.png' %}">
+        <p><a href="#">Calificación del apoyo psicológico ofrecido de 0 a 5, siendo 0 malo y 5 excelente.</a></p>
+
+        <p>Si el estudiante no considera bueno o no ha recibido apoyo psicológico, se debe promocionar que lo tome y el área de psicología comprometerse a ofrecerle a los estudiantes un buen apoyo</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f26.png' %}">
+        <p><a href="#">Calificación de situación laboral de 0 a 5, siendo 0 mala o inexistente y 5 buena.</a></p>
+
+        <p>Giant orange pedal boats have been spotted at various beaches. In this report we tell you some ridiculous precautions to take.</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f27.png' %}">
+        <p><a href="#">Situación laboral e ingreso de padres de 0 a 5, siendo 0 una mala situación y 5 una buena situación.</a></p>
+
+        <p>Si los padres tienen una situación económica precaria lo más probable es que el estudiante también o tenga un empleo que le quita tiempo para el estudio, por eso se debe brindar apoyo financiero, psicológico y académico para que el estudiante compense</p>
+      </div><!-- .news-content -->
+            <div class="news-content">
+        <img src="{% static 'imagenes/f23.png' %}">
+        <p><a href="#">Dependencia económica con los padres de 0 a 5, siendo 0 independiente y 5 totalmente dependiente.</a></p>
+
+        <p>Si el estudiante es independiente sus fuentes de ingreso deben quitarle algo de tiempo de sus estudios. A su vez es posible que los estudiantes demasiado dependientes no asuman responsabilidades fácilmente, se debe brindar apoyo en ambos casos</p>
+      </div><!-- .news-content -->
+    </div><!-- .news-preview -->
+
+  </div><!-- .news-holder -->
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="{% static 'js/vertical.news.slider.min.js' %}"></script>
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1965499-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+   </div>
+    
+</section>
+
+
+<!-- Footer section
+================================================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<p class="wow fadeInUp"  data-wow-delay="0.3s">Universidad del Cauca</p>
+				<ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
+					<li><a href="https://www.facebook.com/unicaucaprensa/?hc_ref=SEARCH&fref=nf" class="fa fa-facebook"></a></li>
+					<li><a href="https://twitter.com/unicauca?lang=es" class="fa fa-twitter"></a></li>
+					<li><a href="https://plus.google.com/?hl=es" class="fa fa-google-plus"></a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+
+<!-- Javascript 
+================================================== -->
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>

@@ -22,10 +22,15 @@ def Ingreso_Evaluador(entrada):
     context={}
     return HttpResponse(template.render(context,entrada))
 
+def Resultados(entrada):
+    template=loader.get_template('resultados.html')
+    context={}
+    return HttpResponse(template.render(context,entrada))
+
 def Encuesta(entrada):
-    filelist = [f for f in os.listdir("Aplicacion/templates/imagenes/") if f.endswith(".png")]
+    filelist = [f for f in os.listdir("Aplicacion/static/imagenes/") if f.endswith(".png")]
     for f in filelist:
-        os.remove("Aplicacion/templates/imagenes/" + f)
+        os.remove("Aplicacion/static/imagenes/" + f)
     template=loader.get_template('gracias.html')
     dato=entrada.POST
     lista1=[]
@@ -53,7 +58,7 @@ def Encuesta(entrada):
     plt.ylabel('Probabilidad de desercion (en %)')
     plt.title('Probabilidad de desercion del estudiante en el tiempo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/probabilidad de desercion.png')
+    plt.savefig('Aplicacion/static/imagenes/probabilidad de desercion.png')
     plt.cla()
     #grafica2:perseverancia
     for i in range(0,29,1):
@@ -73,7 +78,7 @@ def Encuesta(entrada):
     plt.ylabel('Perseverancia caracteristica del individuo (medido de 0 a 5)')
     plt.title('Perseverancia caracteristica del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f1.png')
+    plt.savefig('Aplicacion/static/imagenes/f1.png')
     plt.cla()
     #grafica3:expectativas de exito
     for i in range(0,29,1):
@@ -93,7 +98,7 @@ def Encuesta(entrada):
     plt.ylabel('Expectativas de exito del individuo (medido de 0 a 5)')
     plt.title('Expectativas de exito del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f2.png')
+    plt.savefig('Aplicacion/static/imagenes/f2.png')
     plt.cla()
     #grafica4:habilidad para estudiar
     for i in range(0,29,1):
@@ -113,7 +118,7 @@ def Encuesta(entrada):
     plt.ylabel('Facilidad de aprendizaje (medido de 0 a 5)')
     plt.title('Facilidad de aprendizaje en el individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f3.png')
+    plt.savefig('Aplicacion/static/imagenes/f3.png')
     plt.cla()
     #grafica5:ambiente familiar
     for i in range(0,29,1):
@@ -133,7 +138,7 @@ def Encuesta(entrada):
     plt.ylabel('Ambiente familiar (medido de 0 a 5)')
     plt.title('Ambiente familiar del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f4.png')
+    plt.savefig('Aplicacion/static/imagenes/f4.png')
     plt.cla()
     #grafica6:situacion en la universidad
     for i in range(0,29,1):
@@ -153,7 +158,7 @@ def Encuesta(entrada):
     plt.ylabel('Situacion actual en la universidad (medido de 0 a 5)')
     plt.title('Situacion actual del individuo en la universidad')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f5.png')
+    plt.savefig('Aplicacion/static/imagenes/f5.png')
     plt.cla()
     #grafica7:satisfaccion con el sistema academico
     for i in range(0,29,1):
@@ -173,7 +178,7 @@ def Encuesta(entrada):
     plt.ylabel('Satisfaccion con el sistema academico (medido de 0 a 5)')
     plt.title('Sastisfaccion con el sistema academico del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f6.png')
+    plt.savefig('Aplicacion/static/imagenes/f6.png')
     plt.cla()
     #grafica8:calificacion de la division de recreacion y deporte de la universidad
     for i in range(0,29,1):
@@ -193,7 +198,7 @@ def Encuesta(entrada):
     plt.ylabel('Calificacion de la division de recreacion y deporte (medido de 0 a 5)')
     plt.title('Calificacion de la division de recreacion y deporte')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f7.png')
+    plt.savefig('Aplicacion/static/imagenes/f7.png')
     plt.cla()
     #grafica9:calificacion de la calidad de la ensenanza en la universidad
     for i in range(0,29,1):
@@ -213,7 +218,7 @@ def Encuesta(entrada):
     plt.ylabel('Calificacion de la ensenanza en la universidad (medido de 0 a 5)')
     plt.title('Calificacion de la ensenanza en la universidad')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f8.png')
+    plt.savefig('Aplicacion/static/imagenes/f8.png')
     plt.cla()
     #grafica10:calificacion de la calidad de los docentes universitarios
     for i in range(0,29,1):
@@ -233,7 +238,7 @@ def Encuesta(entrada):
     plt.ylabel('Calificacion de la calidad de los docentes universitarios (medido de 0 a 5)')
     plt.title('Calificacion de la calidad de los docentes segun el individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f9.png')
+    plt.savefig('Aplicacion/static/imagenes/f9.png')
     plt.cla()
     #grafica11:disponibilidad de recursos
     for i in range(0,29,1):
@@ -253,7 +258,7 @@ def Encuesta(entrada):
     plt.ylabel('Disponibilidad de recursos academicos (medido de 0 a 5)')
     plt.title('Disponibilidad de recursos academicos segun el individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f10.png')
+    plt.savefig('Aplicacion/static/imagenes/f10.png')
     plt.cla()
     #grafica12:relacion costo beneficio
     for i in range(0,29,1):
@@ -273,7 +278,7 @@ def Encuesta(entrada):
     plt.ylabel('Relacion costo-beneficio(medido de 0 a 5)')
     plt.title('Relacion costo-beneficio segun el individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f11.png')
+    plt.savefig('Aplicacion/static/imagenes/f11.png')
     plt.cla()
     #grafica13:situacion economica
     for i in range(0,29,1):
@@ -293,7 +298,7 @@ def Encuesta(entrada):
     plt.ylabel('Situacion economica (medido de 0 a 5)')
     plt.title('Situacion economica del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f12.png')
+    plt.savefig('Aplicacion/static/imagenes/f12.png')
     plt.cla()
     #grafica14:nivel educativo de los padres
     for i in range(0,29,1):
@@ -313,7 +318,7 @@ def Encuesta(entrada):
     plt.ylabel('Nivel educativo de los padres (medido de 0 a 5)')
     plt.title('Nivel educativo de los padres del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f13.png')
+    plt.savefig('Aplicacion/static/imagenes/f13.png')
     plt.cla()
     #grafica15:adaptacion al ambiente universitario
     for i in range(0,29,1):
@@ -333,7 +338,7 @@ def Encuesta(entrada):
     plt.ylabel('Adaptacion al ambiente universitario (medido de 0 a 5)')
     plt.title('Adaptacion al ambiente universitario del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f14.png')
+    plt.savefig('Aplicacion/static/imagenes/f14.png')
     plt.cla()
     #grafica16:Desempeno academico
     for i in range(0,29,1):
@@ -353,7 +358,7 @@ def Encuesta(entrada):
     plt.ylabel('Desempeno academico (medido de 0 a 5)')
     plt.title('Desempeno academico del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f15.png')
+    plt.savefig('Aplicacion/static/imagenes/f15.png')
     plt.cla()
     #grafica17:compatibilidad entre horario y actividades extracurriculares
     for i in range(0,29,1):
@@ -373,7 +378,7 @@ def Encuesta(entrada):
     plt.ylabel('Compatibilidad entre horaria (medido de 0 a 5)')
     plt.title('Compatibilidad entre horario y actividades extracurriculares del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f16.png')
+    plt.savefig('Aplicacion/static/imagenes/f16.png')
     plt.cla()
     #grafica18:satisfaccion con la carrera elegida
     for i in range(0,29,1):
@@ -393,7 +398,7 @@ def Encuesta(entrada):
     plt.ylabel('Satisfaccion con la carrera elegida(medido de 0 a 5)')
     plt.title('Satisfaccion del individuo con la carrera que eligio')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f17.png')
+    plt.savefig('Aplicacion/static/imagenes/f17.png')
     plt.cla()
     #grafica19:nivel academico del colegio
     for i in range(0,29,1):
@@ -413,7 +418,7 @@ def Encuesta(entrada):
     plt.ylabel('Nivel academico del colegio (medido de 0 a 5)')
     plt.title('Nivel academico del colegio del que salio el individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f18.png')
+    plt.savefig('Aplicacion/static/imagenes/f18.png')
     plt.cla()
     #grafica20:calidad del proyecto academico
     for i in range(0,29,1):
@@ -433,7 +438,7 @@ def Encuesta(entrada):
     plt.ylabel('Calidad del proyecto academico escogido (medido de 0 a 5)')
     plt.title('Calidad del proyecto academico escogido por el individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f19.png')
+    plt.savefig('Aplicacion/static/imagenes/f19.png')
     plt.cla()
     #grafica21:resultados de la prueba saber
     for i in range(0,29,1):
@@ -453,7 +458,7 @@ def Encuesta(entrada):
     plt.ylabel('Resultado promedio en las pruebas saber (medido de 0 a 5)')
     plt.title('Resultado promedio en las pruebas saber del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f20.png')
+    plt.savefig('Aplicacion/static/imagenes/f20.png')
     plt.cla()
     #grafica22:servicios de financiamiento con los que cuenta el individuo
     for i in range(0,29,1):
@@ -473,7 +478,7 @@ def Encuesta(entrada):
     plt.ylabel('Facilidad de financiamiento (medido de 0 a 5)')
     plt.title('Facilidad de financiamiento del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f21.png')
+    plt.savefig('Aplicacion/static/imagenes/f21.png')
     plt.cla()
     #grafica23:situacion de orden publico
     for i in range(0,29,1):
@@ -493,7 +498,7 @@ def Encuesta(entrada):
     plt.ylabel('Situacion de orden publico en la universidad (medido de 0 a 5)')
     plt.title('Situacion de orden publico en la universidad segun el individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f22.png')
+    plt.savefig('Aplicacion/static/imagenes/f22.png')
     plt.cla()
     #grafica24:interaccion entre docentes y estudiantes
     for i in range(0,29,1):
@@ -513,7 +518,7 @@ def Encuesta(entrada):
     plt.ylabel('Interaccion entre docentes y estudiantes(medido de 0 a 5)')
     plt.title('Interaccion entre docentes y estudiantes en la universidad')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f23.png')
+    plt.savefig('Aplicacion/static/imagenes/f23.png')
     plt.cla()
     #grafica25:apoyo academico que ofrece el programa
     for i in range(0,29,1):
@@ -533,7 +538,7 @@ def Encuesta(entrada):
     plt.ylabel('Apoyo academico que ofrece el programa (medido de 0 a 5)')
     plt.title('Apoyo academico que ofrece el programa del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f24.png')
+    plt.savefig('Aplicacion/static/imagenes/f24.png')
     plt.cla()
     #grafica26:apoyo psicologico que ofrece la universidad
     for i in range(0,29,1):
@@ -553,7 +558,7 @@ def Encuesta(entrada):
     plt.ylabel('Apoyo psicologico que ofrece la universidad (medido de 0 a 5)')
     plt.title('Apoyo psicologico que ofrece la universidad')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f25.png')
+    plt.savefig('Aplicacion/static/imagenes/f25.png')
     plt.cla()
     #grafica27:situacion laboral del individuo
     for i in range(0,29,1):
@@ -573,7 +578,7 @@ def Encuesta(entrada):
     plt.ylabel('Situacion economica (medido de 0 a 5)')
     plt.title('Situacion economica del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f26.png')
+    plt.savefig('Aplicacion/static/imagenes/f26.png')
     plt.cla()
     # grafica28:situacion laboral de los padres
     for i in range(0, 29, 1):
@@ -593,7 +598,7 @@ def Encuesta(entrada):
     plt.ylabel('Situacion laboral de los padres (medido de 0 a 5)')
     plt.title('Situacion laboral de los padres del individuo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f27.png')
+    plt.savefig('Aplicacion/static/imagenes/f27.png')
     plt.cla()
     #grafica29:dependencia economica a los padres o un tercero
     for i in range(0,29,1):
@@ -613,7 +618,7 @@ def Encuesta(entrada):
     plt.ylabel('Dependencia economica a los padres o a un tercero (medido de 0 a 5)')
     plt.title('Dependencia economica a los padres o a un tercero')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f28.png')
+    plt.savefig('Aplicacion/static/imagenes/f28.png')
     plt.cla()
     #grafica30:Embarazo
 
@@ -623,7 +628,7 @@ def Encuesta(entrada):
     plt.ylabel('Existencia de embarazo (no=5 a si=0)')
     plt.title('Existencia de embarazo')
     plt.show()
-    plt.savefig('Aplicacion/templates/imagenes/f28.png')
+    plt.savefig('Aplicacion/static/imagenes/f28.png')
     plt.cla()
 
     return HttpResponse(template.render(dato,entrada))
