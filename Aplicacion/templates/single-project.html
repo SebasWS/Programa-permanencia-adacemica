@@ -79,8 +79,8 @@ http://www.tooplate.com/view/2082-pure-mix
                     <div class="intro-inner">
                      	<ul id="nav-menu">
                          <li><a href="/">Home</a></li>
-                       	 <li><a href="/Ingreso_estudiante">Ingreso Estudiante</a></li>
-                       	 <li><a href="/Ingreso_evaluador">Ingreso Evaluador</a></li>
+                       	 <li><a href="/Ingreso_estudiante">Ingreso estudiante</a></li>
+                       	 <li><a href="/Ingreso_evaluador">Ingreso evaluador</a></li>
                       </ul>
                     </div>
                   </div>
@@ -121,23 +121,16 @@ http://www.tooplate.com/view/2082-pure-mix
       <div class="row">
 
          <div class="wow fadeInUp col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-4" data-wow-delay="2.3s">
-			<div class="project-info">
-				<h4>Client</h4>
-				<p>Ananda Co.</hp>
-			</div>
-			<div class="project-info">
-				<h4>Date</h4>
-				<hp>12 June 2016</p>
-			</div>
-			<div class="project-info">
-				<h4>Category</h4>
-				<p>Branding</p>
-			</div>
-		</div>
 
+
+		</div>
+        <form action="/Resultados/", method="post">
+			 {% csrf_token %}
 		<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="2.6s">
 			<p>A continuación encontrará la plataforma para visualziar los resultados.</p>
-			<img src="{% static 'images/portfolio-img1.jpg' %}" class="img-responsive" alt="Single Project">
+			<div class="contact-submit">
+                      	<input name="submit" type="submit" class="form-control" id="submit" value="Ver resultados">
+                      </div>
 		</div>
 
       </div>
