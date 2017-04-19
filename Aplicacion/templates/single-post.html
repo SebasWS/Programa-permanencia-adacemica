@@ -63,7 +63,7 @@ http://www.tooplate.com/view/2082-pure-mix
             <div class="row">
 
               <div class="brand">
-                <a href="/">Home</a>
+                <a href="/">Plataforma para la permanencia académica</a>
               </div>
 
               <div class="navicon">
@@ -125,7 +125,10 @@ http://www.tooplate.com/view/2082-pure-mix
          			    <div class="post-format">
 						        <span>Por <a href="#">Universidad del Cauca</a></span>
 					       </div>
-               
+
+               <form action="/Encuesta/", method="post">
+                     {% csrf_token %}
+
                
 
                <div class="blog-comment">
@@ -140,11 +143,11 @@ http://www.tooplate.com/view/2082-pure-mix
                   <h3>Datos personales</h3>
                     <form action="#"/Encuesta/"" method="post">
                     {% csrf_token %}
-                      <input type="text" class="form-control" placeholder="Nombre" name="name" required><br>
-                      <input type="text" class="form-control" placeholder="Edad" name="edad" required><br>
-                      <input type="text" class="form-control" placeholder="Sexo" name="sexo" required><br>
-                      <input type="text" class="form-control" placeholder="Estado civil" name="estado" required><br>
-                      <input type="text" class="form-control" placeholder="Código estudiantil" name="código" required>
+                      <input type="text" class="form-control" placeholder="Nombre" name="name"><br>
+                      <input type="text" class="form-control" placeholder="Edad" name="edad"><br>
+                      <input type="text" class="form-control" placeholder="Sexo" name="sexo"><br>
+                      <input type="text" class="form-control" placeholder="Estado civil" name="estado"><br>
+                      <input type="text" class="form-control" placeholder="Código estudiantil" name="código">
                       <p>Pregunta 1: Califica de 0 a 5 tu perseverancia, siendo 0 poco perseverante y 5 muy perseverante.</p>
                       <table width="500" border="0">
                       	<tr>
@@ -450,7 +453,7 @@ http://www.tooplate.com/view/2082-pure-mix
                             <td><input type="radio" name="radio27" id="28dos" value="2">2</td>
                             <td><input type="radio" name="radio27" id="28tres" value="3">3</td>
                             <td><input type="radio" name="radio27" id="28cuatro" value="4">4</td>
-                            <td><input type="radio" name="radio27" id="28cinco" value="5" cheked>5</td>
+                            <td><input type="radio" name="radio27" id="28cinco" value="5" checked>5</td>
                       	</tr>
                       </table>
                       <p>Pregunta 29:	¿Consume actualmente algún tipo de sustancia alucinogena?.</p>
@@ -523,7 +526,7 @@ http://www.tooplate.com/view/2082-pure-mix
                             <td><input type="radio" name="radio37" id="38uno" value="5" checked>no</td>
                       	</tr>
                       </table><br>
-                      <textarea class="form-control" placeholder="Deja un comentario adicional que nos quieras comparitr" rows="5" name"Your Comments" required id="comment"></textarea>
+                      <textarea class="form-control" placeholder="Deja un comentario adicional que nos quieras comparitr" rows="5" name"Your Comments" id="comment"></textarea>
                       <div class="contact-submit">
                       	<input name="submit" type="submit" class="form-control" id="submit" value="Enviar">
                       </div>
@@ -543,7 +546,8 @@ http://www.tooplate.com/view/2082-pure-mix
 		<div class="row">
 
 			<div class="col-md-12 col-sm-12">
-				<p class="wow fadeInUp"  data-wow-delay="0.3s">Universidad del Cauca</p>
+				<p class="wow fadeInUp"  data-wow-delay="0.3s">Plataformas de perfiles estudiantiles para el análisis y seguimiento del
+                    entorno y toma de medidas relativas a la permanencia estudiantil en los diferentes programas de la Universidad del Cauca</p>
 				<ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
 					<<li><a href="https://www.facebook.com/unicaucaprensa/?hc_ref=SEARCH&fref=nf" class="fa fa-facebook"></a></li>
 					<li><a href="https://twitter.com/unicauca?lang=es" class="fa fa-twitter"></a></li>

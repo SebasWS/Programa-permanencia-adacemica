@@ -622,17 +622,106 @@ def Encuesta(entrada):
     plt.show()
     plt.savefig('Aplicacion/static/imagenes/f28.png')
     plt.cla()
-    #grafica30:Embarazo
+    #grafica30:Consumo de sustancias psicoactivas
 
     yprob = [5, 5, 5, int(dato["radio28"])]
+    plt.plot(x, yprob)
+    plt.xlabel('Tiempo(en semestres)')
+    plt.ylabel('Consumo de sustancias psicoactivas (no=5 a si=0)')
+    plt.title('Consumo de sustancias psicoactivas')
+    plt.show()
+    plt.savefig('Aplicacion/static/imagenes/f29.png')
+    plt.cla()
+    # grafica31:Existencia de embarazo
+
+    yprob = [5, 5, 5, int(dato["radio29"])]
     plt.plot(x, yprob)
     plt.xlabel('Tiempo(en semestres)')
     plt.ylabel('Existencia de embarazo (no=5 a si=0)')
     plt.title('Existencia de embarazo')
     plt.show()
-    plt.savefig('Aplicacion/static/imagenes/f28.png')
+    plt.savefig('Aplicacion/static/imagenes/f30.png')
     plt.cla()
+    # grafica32:Existencia de estado depresivo en el pasado
 
+    yprob = [5, 5, 5, int(dato["radio30"])]
+    plt.plot(x, yprob)
+    plt.xlabel('Tiempo(en semestres)')
+    plt.ylabel('Conducta depresiva en el pasado (no=5 a si=0)')
+    plt.title('Existencia de conductas depresivas en el pasado')
+    plt.show()
+    plt.savefig('Aplicacion/static/imagenes/f31.png')
+    plt.cla()
+    # grafica33:Intento de suicidio en el pasado
+
+    yprob = [5, 5, 5, int(dato["radio31"])]
+    plt.plot(x, yprob)
+    plt.xlabel('Tiempo(en semestres)')
+    plt.ylabel('Intento de suicidio en el pasado (no=5 a si=0)')
+    plt.title('Existencia de intentos de suicidio en el pasado')
+    plt.show()
+    plt.savefig('Aplicacion/static/imagenes/f32.png')
+    plt.cla()
+    # grafica34:Preocupaciones que afectan el rendimiento academico
+
+    yprob = [5, 5, 5, int(dato["radio32"])]
+    plt.plot(x, yprob)
+    plt.xlabel('Tiempo(en semestres)')
+    plt.ylabel('Preocupaciones en general (no=5 a si=0)')
+    plt.title('Preocupaciones que afectan el rendimiento academico')
+    plt.show()
+    plt.savefig('Aplicacion/static/imagenes/f33.png')
+    plt.cla()
+    # grafica35:Existencia de depresion en la actualidad
+
+    yprob = [5, 5, 5, int(dato["radio33"])]
+    plt.plot(x, yprob)
+    plt.xlabel('Tiempo(en semestres)')
+    plt.ylabel('Existencia de depresion en la actualidad (no=5 a si=0)')
+    plt.title('Existencia de depresion en la actualidad')
+    plt.show()
+    plt.savefig('Aplicacion/static/imagenes/f34.png')
+    plt.cla()
+    # grafica36:Ideas suicidas en el ultimo ano
+
+    yprob = [5, 5, 5, int(dato["radio34"])]
+    plt.plot(x, yprob)
+    plt.xlabel('Tiempo(en semestres)')
+    plt.ylabel('Ideas suicidas en el ultimo ano (no=5 a si=0)')
+    plt.title('Ideas suicidas en el ultimo ano')
+    plt.show()
+    plt.savefig('Aplicacion/static/imagenes/f35.png')
+    plt.cla()
+    # grafica37:Intento de suicidio alguna vez en la vida
+
+    yprob = [5, 5, 5, int(dato["radio35"])]
+    plt.plot(x, yprob)
+    plt.xlabel('Tiempo(en semestres)')
+    plt.ylabel('Intento de suicidio alguna vez en la vida (no=5 a si=0)')
+    plt.title('Intento de suicidio alguna vez en la vida')
+    plt.show()
+    plt.savefig('Aplicacion/static/imagenes/f36.png')
+    plt.cla()
+    # grafica38:Acoso sexual en el ambiente familiar
+
+    yprob = [5, 5, 5, int(dato["radio36"])]
+    plt.plot(x, yprob)
+    plt.xlabel('Tiempo(en semestres)')
+    plt.ylabel('Acoso sexual en el ambiente familiar (no=5 a si=0)')
+    plt.title('Acoso secual en el ambiente familiar')
+    plt.show()
+    plt.savefig('Aplicacion/static/imagenes/f37.png')
+    plt.cla()
+    # grafica39:Acoso sexual en el ambiente univeristario
+
+    yprob = [5, 5, 5, int(dato["radio36"])]
+    plt.plot(x, yprob)
+    plt.xlabel('Tiempo(en semestres)')
+    plt.ylabel('Acoso sexual en el ambiente universitario (no=5 a si=0)')
+    plt.title('Acoso secual en el ambiente universitario')
+    plt.show()
+    plt.savefig('Aplicacion/static/imagenes/f38.png')
+    plt.cla()
     return HttpResponse(template.render(dato,entrada))
 
 
