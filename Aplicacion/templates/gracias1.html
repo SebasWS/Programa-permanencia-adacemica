@@ -1,8 +1,14 @@
 {% load staticfiles %}
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<!--
+
+Template 2082 Pure Mix
+
+http://www.tooplate.com/view/2082-pure-mix
+
+-->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,11 +17,11 @@
 
 	<!-- Site title
    ================================================== -->
-	<title>Gestión de permanencia Universidad del Cauca</title>
+	<title>Ingreso Estudiante</title>
 
 	<!-- Bootstrap CSS
    ================================================== -->
-	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %} ">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
 	<!-- Animate CSS
    ================================================== -->
@@ -57,8 +63,7 @@
             <div class="row">
 
               <div class="brand">
-                <a href="/">Plataforma para la permanencia académica</a>
-                <p>Seleccionar una opción del menú a la derecha por favor</p>
+                <a href="/">Home</a>
               </div>
 
               <div class="navicon">
@@ -71,10 +76,10 @@
                   <div class="list-menu">
                     <i class="icon ion-close-round close-iframe"></i>
                     <div class="intro-inner">
-                      <ul id="nav-menu">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/Ingreso_estudiante/">Ingreso estudiante</a></li>
-                        <li><a href="/Ingreso_evaluador/">Ingreso evaluador</a></li>
+                     	<ul id="nav-menu">
+                         <li><a href="/">Home</a></li>
+                       	 <li><a href="/Ingreso_estudiante">Ingreso Estudiante</a></li>
+                       	 <li><a href="/Ingreso_evaluador">Ingreso Evaluador</a></li>
                       </ul>
                     </div>
                   </div>
@@ -89,17 +94,15 @@
    </nav>
 </div>
 
-
 <!-- Header section
 ================================================== -->
-<section id="header" class="header-one">
+<section id="header" class="header-five">
 	<div class="container">
 		<div class="row">
 
 			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
           <div class="header-thumb">
-              <h1 class="wow fadeIn" data-wow-delay="1.6s">Gestión de permanencia estudiantil</h1>
-              <h3 class="wow fadeInUp" data-wow-delay="1.9s">Evaluación para estimular la graduación en la educación superior</h3>
+              <h1 class="wow fadeIn" data-wow-delay="0.6s">Gracias por tu participación en la encuesta</h1>
           </div>
 			</div>
 
@@ -108,42 +111,16 @@
 </section>
 
 
-<!-- Portfolio section
+<!-- Single Post section
 ================================================== -->
-<section id="portfolio">
+<section id="single-post">
    <div class="container">
       <div class="row">
 
-         <div class="col-md-12 col-sm-12">
-            
-               <!-- iso section -->
-               <div class="iso-section wow fadeInUp" data-wow-delay="2.6s">
+         <div class="wow fadeInUp col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10" data-wow-delay="2.3s">
 
-                  <ul class="filter-wrapper clearfix">
-                        </ul>
-
-                        <!-- iso box section -->
-                        <div class="iso-box-section wow fadeInUp" data-wow-delay="1s">
-                           <div class="iso-box-wrapper col4-iso-box">
-
-                              <div class="iso-box photoshop branding col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <img src="{% static 'images/header-bg1.jpg' %}" class="img-responsive" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <a href="http://www.unicauca.edu.co/versionP/"><i class="fa fa-link"></i></a>
-                                                <h2>Página principal</h2>
-                                             </div>
-                                       </div>
-                                 </div>
-                              </div>
-
-                            </div>
-                        </div>
-
-               </div>
-
-         </div>
+         	  </div>
+		    </div>
 
       </div>
    </div>
@@ -160,13 +137,10 @@
 
 </footer>
 
-
 <!-- Javascript 
 ================================================== -->
 <script src="{% static 'js/jquery.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/isotope.js' %}"></script>
-<script src="{% static 'js/imagesloaded.min.js' %}"></script>
 <script src="{% static 'js/wow.min.js' %}"></script>
 <script src="{% static 'js/custom.js' %}"></script>
 
