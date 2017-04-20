@@ -7,6 +7,7 @@ urlpatterns = [
     url(r'^Ingreso_estudiante/$', views.Ingreso_Estudiante, name='pagina2'),
     url(r'^Ingreso_evaluador/$', views.Ingreso_Evaluador, name='pagina3'),
     url(r'^Encuesta/$',views.Encuesta, name='Pagina4'),
-    url(r'^Resultados/$',views.Resultados,name='Pagina5')
+    url(r'^Resultados/$',views.Resultados,name='Pagina5'),
+    url(r'^tyc/$',views.terminosycondiciones,name='Pagina6')
 ]
 

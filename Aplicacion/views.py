@@ -29,6 +29,11 @@ def Resultados(entrada):
     context={}
     return HttpResponse(template.render(context,entrada))
 
+def terminosycondiciones(entrada):
+    template=loader.get_template('tyc.html')
+    context={}
+    return HttpResponse(template.render(context,entrada))
+
 def Encuesta(entrada):
     filelist = [f for f in os.listdir("Aplicacion/static/imagenes/") if f.endswith(".png")]
     for f in filelist:
